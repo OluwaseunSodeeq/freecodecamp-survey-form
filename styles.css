@@ -1,161 +1,161 @@
-/* *,
-*::before,
-*::after {
-  box-sizing: border-box;
-} */
-@import url('https://fonts.googleapis.com/css2?family=Gentium+Plus:ital,wght@0,400;0,700;1,400&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Gentium+Plus:ital,wght@0,400;0,700;1,400&display=swap");
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 :root {
-    --main-bg-color:#ffffff;
-    --form-bg-color:#250312;
-    --text-color-one:#FFFFFF;
-    --button-color:#000;
-  
-
-
+  --main-bg-color: #ffffff;
+  --form-bg-color: #250312;
+  --text-color-one: #ffffff;
+  --button-color: #000;
 }
 /* BODY */
 body {
-    width: 100%;
-    background-color: var( --main-bg-color);
-    z-index: -1;
-
+  width: 100%;
+  max-width: 1200px;
+  background-color: var(--main-bg-color);
+  z-index: -1;
+  margin: 0 auto;
 }
 body header {
-    font-family:'Gentum Plus' serif;
-    font-weight: 700;
+  font-family: "Gentum Plus" serif;
+  font-weight: 700;
 }
 label {
-    font-family: 'Gentum Plus' sans-serif;
-    font-style: italic;
-    font-weight: 400;
+  font-family: "Gentum Plus" sans-serif;
+  font-style: italic;
+  font-weight: 400;
 }
 body p {
-    font-family: 'Gentum Plus' sans-serif;
-    font-style: normal;
-    font-weight: 400;
-
+  font-family: "Gentum Plus" sans-serif;
+  font-style: normal;
+  font-weight: 400;
 }
 input:hover,
 button:hover,
 #checkboxes:hover,
 select:hover,
-textarea:hover{
-    border:2px dashed var(--button-color);
+textarea:hover {
+  border: 2px dashed var(--button-color);
 }
-
 
 /* HEADER-SECTION */
 header {
-    width: 100%;
-    text-align: center;
-    color: var(--form-bg-color);
-    
+  width: 100%;
+  text-align: center;
+  color: var(--form-bg-color);
+  margin-top: 50px;
 }
-.desccription{
-    font-size: 1.2rem;
-    color: var(--form-bg-color);
+.desccription {
+  font-size: 1.2rem;
+  color: var(--form-bg-color);
+  font-weight: 700;
 }
-
-
 
 /* FORM-BODY */
 
 form {
-    background-color:var(--form-bg-color) ;
-    height: auto;
-    border-radius: 10px;
-    margin-top: 20px;
+  background-color: var(--form-bg-color);
+  height: auto;
+  border-radius: 10px;
+  height: auto;
+  padding-bottom: 100px;
+}
+#survey-form {
+  margin-top: 50px;
 }
 .block {
-    display: block;
-    margin-top: 10px;
+  display: block;
+  margin-top: 30px;
 }
-form ::placeholder{
-    font-size: medium;
+form ::placeholder {
+  font-size: medium;
 }
-
 
 /* former form */
 
-.former,.latter {
-    width: 400px;
-   
+.former,
+.latter {
+  width: 45%;
 }
-input[type=text],input[type=number],input[type=email],
+.latter {
+  margin-top: 30px;
+}
+input[type="text"],
+input[type="number"],
+input[type="email"],
 select {
-    margin-top: 10px;
-    width: 100%;
-    padding: 10px 0px;
+  margin-top: 20px;
+  width: 100%;
+  padding: 10px 10px;
+  border-radius: 8px;
 }
 select {
-    margin-top: 50px;
+  margin-top: -20px;
+  padding-left: 10px;
 }
-#dropdown,.formerBox {
-    margin-top: 20px;
+#dropdown,
+.formerBox {
+  margin-top: 48px;
 }
-input[type=radio]{
-    width: 18px;
-    height: 18px;
+input[type="radio"] {
+  width: 18px;
+  height: 18px;
 }
 
 /* latter form */
 
 form label {
-    color:var(--text-color-one);
-    font-size: 1.4rem;
-    font-family: 'Gentum Plus' sans-serif;
-    font-style: italic;
-    display: inline;
+  color: var(--text-color-one);
+  font-size: 1.4rem;
+  font-family: "Gentum Plus" sans-serif;
+  font-style: italic;
+  display: inline;
 }
 .question {
-    font-size: 1.8rem;
-    font-style: normal;
-    font-weight: 700;
-
+  font-size: 1.8rem;
+  font-style: normal;
+  font-weight: 700;
 }
 ul {
-    list-style-type: none;
+  list-style-type: none;
 }
 
 .latter > ul > li {
-    width: 400px;
-    padding-top:10px ;
-    display: flex;
-    justify-content: space-between;
-   
-   
+  width: 100%;
+  padding-top: 10px;
+  display: flex;
+  justify-content: space-between;
 }
 input.box11 {
- 
-   width: 30px;
+  width: 30px;
 }
-
 
 form {
-    width: 80%;
-    margin: auto auto 5%;
-    padding: 1% 5%;
-    display: flex;
-    justify-content: space-between;
+  width: 80%;
+  margin: auto auto 5%;
+  padding: 1% 5%;
+  display: flex;
+  justify-content: space-between;
 }
-textarea{
-    width: 100%;
+textarea {
+  width: 100%;
 }
-button{
-    width: 150px;
-    padding: 5px;
-    background-color:var(--text-color-one) ;
-    color:var(--form-bg-color) ;
-    border-radius: 5px;
-    border:1px solid var(--button-color) ;
-    margin: 0 auto;
+#submit {
+  width: 150px;
+  padding: 5px;
+  background-color: var(--text-color-one);
+  color: var(--form-bg-color);
+  border-radius: 5px;
+  border: 1px solid var(--button-color);
+  margin: 10px auto 0px;
 }
-
+.copyright {
+  color: var(--form-bg-color);
+  font-weight: 600;
+  text-align: center;
+}
 /* FOOTER */
 /* .last-line {
     height: 2px;
@@ -164,53 +164,77 @@ button{
     color: var(--text-color-one);
 } */
 
-@media (max-width:768px)  {
-    form {
-        width: 400px;
-        flex-direction: column;
-        padding-right: 10px;
-       
-    }
-    .former,.latter {
-        min-width: 350px;
-        margin: 0 auto;
-    }
-    .latter > ul > li,textarea,input[type=text],input[type=number],input[type=email],select {
-        width: 80%;
-    }
-    form label{
-        font-size: 1rem;
-    }
-    .question {
-        width: 350px;
-        font-size: 1.4rem;
-    }
+@media (max-width: 768px) {
+  form {
+    width: 90%;
+    flex-direction: column;
+    justify-content: center;
+    padding-bottom: 20px;
+  }
+  .former,
+  .latter {
+    width: 90%;
+    min-width: 300px;
+    margin: 0 auto;
+  }
+  .latter > ul > li,
+  textarea,
+  input[type="text"],
+  input[type="number"],
+  input[type="email"],
+  select {
+    /* width: 80%; */
+    width: 100%;
+  }
+  form label {
+    font-size: 1rem;
+  }
+  .question {
+    width: 350px;
+    font-size: 1.4rem;
+  }
 }
-
-@media (max-width:400px) {
-    form {
-        width: 350px;
-        flex-direction: column;
-        padding-right: 10px;
-       
-    }
-    .former,.latter {
-        width: 320px;
-        margin: 0 auto;
-    }
-    .latter > ul > li,textarea,input[type=text],input[type=number],input[type=email],select {
-        width: 90%;
-    }
-    form label{
-        font-size: 1rem;
-    }
-    .question {
-        font-size: 1.4rem;
-    }
-    button {
-       text-align: center;
-
-    }
-
+@media (max-width: 600px) {
+  .former,
+  .latter {
+    width: 90%;
+    min-width: 300px;
+    margin: 0 auto;
+  }
+  .latter > ul > li,
+  textarea,
+  input[type="text"],
+  input[type="number"],
+  input[type="email"],
+  select {
+    width: 100%;
+  }
 }
-
+@media (max-width: 400px) {
+  form {
+    width: 100%;
+    overflow-x: hidden;
+  }
+  .former,
+  .latter {
+    width: 95%;
+    margin: 0 auto;
+  }
+  .latter > ul > li,
+  textarea,
+  input[type="text"],
+  input[type="number"],
+  input[type="email"],
+  select {
+    width: 100%;
+  }
+  form label {
+    font-size: 1rem;
+  }
+  .question {
+    font-size: 1.4rem;
+  }
+  button {
+    text-align: center;
+  }
+}

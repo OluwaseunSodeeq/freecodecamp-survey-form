@@ -1,86 +1,227 @@
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Survey-Form</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
     <header>
-        <h1 id="title">freeCodeCamp Survey Form</h1>
-        <p id="description">Thank you for taking the time to help us improve the platform</p>
+      <h1 id="title">freeCodeCamp Survey Form</h1>
+      <p id="description">
+        Thank you for taking the time to help us improve the platform
+      </p>
     </header>
     <form action="" id="survey-form">
-        <div class="former">
-            <!-- inputs -->
-            
-                <label for="name" id="name-label" class="block">Name<input type="text" id="name" class="form-control block" placeholder="Enter your name" required></label>
-                <label for="name" id="email-label" class="block">Email <input type="email" id="email" class="form-control block " placeholder="Enter your email" required></label> 
-                <label for="name" id="number-label" class="block">Age (optional) <input type="number" id="number" class="form-control block " placeholder="Age" min="18" max="70" required></label>
-            
-            <!-- select-options   -->
-            <select name="" id="dropdown" class="block" >
-                <option value="" selected>Select current role</option>
-                <option value="1">student</option>
-                <option value="2">Full Time job</option>
-                <option value="3">Full Time Learner</option>
-                <option value="4">Prefer not to say</option>
-                <option value="5">Others</option>
-            </select>
-            <!-- radio-buttons -->
-            <label id="radio-buttons" class=" question block">Would you recommend freeCodeCamp to a friend?</label>
-            <ul class="formerBox">
-                <li><input type="radio" name="account-type" id="first-radio-button"  value="Definitely" class="box11"><label for="first-radio-button">Definitely</label></li>
-                <li><input type="radio" name="account-type" id="second-radio-button"  value="Maybe" class="box11"><label for="second-radio-button">Maybe</label></li>
-                <li><input type="radio" name="account-type" id="third-radio-button"  value="not-sure"  class="box11"><label for="third-radio-button" >Not sure</label></li>
-            </ul> 
-            <!-- checkboxes -->
-            <label for="" class=" question block " >What is your favorite feature of freeCodeCamp?</label>
-            <select name="" id="dropdown" class="block" >
-                <option value=""selected>Select an option</option>
-                <option value="1">challenges</option>
-                <option value="2">project</option>
-                <option value="3">Community</option>
-                <option value="4">Open source</option>
-                
-            </select>
-        </div>
-        <div class="latter">
-            <ul class="latterBox">
-                <li><label for="checkboxes" class=" latterBox question">What would you like to see improved? (Check all that apply</label>
-                <li><label for="checkboxes" >Front  -end project</label><input type="checkbox" id="checkboxes" class="blockBox box11" value="Front-end project" ></li>
-                <li><label for="checkboxes" >Back-end project</label><input type="checkbox" id="checkboxes" class="blockBox box11" value="Back-end project"></li>
-                <li><label for="checkboxes" >Data visualization</label><input type="checkbox" id="checkboxes" class="blockBox box11" value="Data visualization"></li>
-                <li><label for="checkboxes" >Challenges</label><input type="checkbox" id="checkboxes" class="blockBox box11" value="Challenges"></li>
-                <li><label for="checkboxes" >Open Source Community</label><input type="checkbox" id="checkboxes" class="blockBox box11" value="Open Source Community"></li>
-                <li><label for="checkboxes" >Gitter help rooms</label><input type="checkbox" id="checkboxes" class="blockBox box11" value="Gitter help rooms"></li>
-                <li><label for="checkboxes" >Videos</label><input type="checkbox" id="checkboxes" class="blockBox box11" value="Videos"></li>
-                <li><label for="checkboxes" >City Meetups</label><input type="checkbox" id="checkboxes" class="blockBox box11" value="City Meetups"></li>
-                <li><label for="checkboxes" >Wiki</label><input type="checkbox" id="checkboxes" class="blockBox box11" value="Wiki"></li>
-                <li><label for="checkboxes" >Forum</label><input type="checkbox" id="checkboxes" class="blockBox box11" value="Forum"></li>
-                <li><label for="checkboxes" >Additional Courses</label> <input type="checkbox" id="checkboxes " class="blockBox box11" value="Additional Courses"></li>
-            </ul>
-            <!-- textarea -->
-            <label for="" class="block question">Any comments or suggestions</label>
-            <textarea name="" id="" class="block" cols="30" rows="10" placeholder="Enter your comment here..."></textarea>
-            <button id="submit" class="block">Submit</button>
-           
+      <div class="former">
+        <!-- inputs -->
 
-        </div>
-        <!-- <div class="last-line block"></div>
-        <div class="copyright block">&COPY; Sodeeq Oluwaseun 2022.</div>
-             -->
-    
-    
-    </form>  
-   
-        
+        <label for="name" id="name-label" class="block"
+          >Name<input
+            type="text"
+            id="name"
+            class="form-control block"
+            placeholder="Enter your name"
+            required
+        /></label>
+        <label for="name" id="email-label" class="block"
+          >Email
+          <input
+            type="email"
+            id="email"
+            class="form-control block"
+            placeholder="Enter your email"
+            required
+        /></label>
+        <label for="name" id="number-label" class="block"
+          >Age (optional)
+          <input
+            type="number"
+            id="number"
+            class="form-control block"
+            placeholder="Age"
+            min="18"
+            max="70"
+            required
+        /></label>
 
-   
-    
-</body>
-
-    
-
+        <!-- select-options   -->
+        <select name="" id="dropdown" class="block">
+          <option value="" selected>Select current role</option>
+          <option value="1">student</option>
+          <option value="2">Full Time job</option>
+          <option value="3">Full Time Learner</option>
+          <option value="4">Prefer not to say</option>
+          <option value="5">Others</option>
+        </select>
+        <!-- radio-buttons -->
+        <label id="radio-buttons" class="question block"
+          >Would you recommend freeCodeCamp to a friend?</label
+        >
+        <ul class="formerBox">
+          <li>
+            <input
+              type="radio"
+              name="account-type"
+              id="first-radio-button"
+              value="Definitely"
+              class="box11"
+            /><label for="first-radio-button">Definitely</label>
+          </li>
+          <li>
+            <input
+              type="radio"
+              name="account-type"
+              id="second-radio-button"
+              value="Maybe"
+              class="box11"
+            /><label for="second-radio-button">Maybe</label>
+          </li>
+          <li>
+            <input
+              type="radio"
+              name="account-type"
+              id="third-radio-button"
+              value="not-sure"
+              class="box11"
+            /><label for="third-radio-button">Not sure</label>
+          </li>
+        </ul>
+        <!-- checkboxes -->
+        <label for="" class="question block"
+          >What is your favorite feature of freeCodeCamp?</label
+        >
+        <select name="" id="dropdown" class="block">
+          <option value="" selected>Select an option</option>
+          <option value="1">challenges</option>
+          <option value="2">project</option>
+          <option value="3">Community</option>
+          <option value="4">Open source</option>
+        </select>
+      </div>
+      <div class="latter">
+        <ul class="latterBox">
+          <li>
+            <label for="checkboxes" class="latterBox question"
+              >What would you like to see improved? (Check all that
+              apply)</label
+            >
+          </li>
+          <li>
+            <label for="checkboxes">Front -end project</label
+            ><input
+              type="checkbox"
+              id="checkboxes"
+              class="blockBox box11"
+              value="Front-end project"
+            />
+          </li>
+          <li>
+            <label for="checkboxes">Back-end project</label
+            ><input
+              type="checkbox"
+              id="checkboxes"
+              class="blockBox box11"
+              value="Back-end project"
+            />
+          </li>
+          <li>
+            <label for="checkboxes">Data visualization</label
+            ><input
+              type="checkbox"
+              id="checkboxes"
+              class="blockBox box11"
+              value="Data visualization"
+            />
+          </li>
+          <li>
+            <label for="checkboxes">Challenges</label
+            ><input
+              type="checkbox"
+              id="checkboxes"
+              class="blockBox box11"
+              value="Challenges"
+            />
+          </li>
+          <li>
+            <label for="checkboxes">Open Source Community</label
+            ><input
+              type="checkbox"
+              id="checkboxes"
+              class="blockBox box11"
+              value="Open Source Community"
+            />
+          </li>
+          <li>
+            <label for="checkboxes">Gitter help rooms</label
+            ><input
+              type="checkbox"
+              id="checkboxes"
+              class="blockBox box11"
+              value="Gitter help rooms"
+            />
+          </li>
+          <li>
+            <label for="checkboxes">Videos</label
+            ><input
+              type="checkbox"
+              id="checkboxes"
+              class="blockBox box11"
+              value="Videos"
+            />
+          </li>
+          <li>
+            <label for="checkboxes">City Meetups</label
+            ><input
+              type="checkbox"
+              id="checkboxes"
+              class="blockBox box11"
+              value="City Meetups"
+            />
+          </li>
+          <li>
+            <label for="checkboxes">Wiki</label
+            ><input
+              type="checkbox"
+              id="checkboxes"
+              class="blockBox box11"
+              value="Wiki"
+            />
+          </li>
+          <li>
+            <label for="checkboxes">Forum</label
+            ><input
+              type="checkbox"
+              id="checkboxes"
+              class="blockBox box11"
+              value="Forum"
+            />
+          </li>
+          <li>
+            <label for="checkboxes">Additional Courses</label>
+            <input
+              type="checkbox"
+              id="checkboxes "
+              class="blockBox box11"
+              value="Additional Courses"
+            />
+          </li>
+        </ul>
+        <!-- textarea -->
+        <label for="" class="block question">Any comments or suggestions</label>
+        <textarea
+          name=""
+          id=""
+          class="block"
+          cols="30"
+          rows="10"
+          placeholder="Enter your comment here..."
+        ></textarea>
+        <button id="submit" class="block">Submit</button>
+      </div>
+      <!-- <div class="last-line block"></div> -->
+    </form>
+    <div class="copyright block">&COPY; Oluwaseun Sodeeq 2022.</div>
+  </body>
 </html>
